@@ -33,6 +33,9 @@
           </div>
       </div>
 
+
+
+      
 <?php else: ?>
 	 <div class="col-12">
           <div class="card">

@@ -1,6 +1,5 @@
 <?php 
 
-
 		$fname=$_GET['f'];   
 		$fx = explode("_", $fname,2);
 		$name = $fx[1];

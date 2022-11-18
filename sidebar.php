@@ -57,7 +57,7 @@
             <a href="#" class="nav-link nav-is-tree nav-edit_document nav-view_document">
               <i class="nav-icon fa fa-folder-open"></i>
               <p>
-                Documents
+              Mata Kuliah A
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -75,7 +75,8 @@
                 </a>
               </li>
             </ul>
-          </li>  
+          </li>
+          
         <?php else: ?>
           <li class="nav-item">
             <a href="#" class="nav-link nav-is-tree nav-edit_document nav-view_document">
@@ -99,7 +100,7 @@
                 </a>
               </li>
             </ul>
-          </li>  
+          </li>
         <?php endif; ?>
         </ul>
       </nav>

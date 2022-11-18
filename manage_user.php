@@ -45,8 +45,6 @@ foreach($user->fetch_array() as $k =>$v){
 			<img src="<?php echo isset($meta['avatar']) ? 'assets/uploads/'.$meta['avatar'] :'' ?>" alt="" id="cimg" class="img-fluid img-thumbnail">
 		</div>
 		
-		
-
 	</form>
 </div>
 <style>

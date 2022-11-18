@@ -42,7 +42,7 @@ header("location:index.php?page=home");
   <main id="main" >
   	
   		<div class="align-self-center w-100">
-		<h4 class="text-white text-center"><b>Online Document Sharing System</b></h4>
+		<h4 class="text-white text-center"><b>Document Sharing System</b></h4>
   		<div id="login-center" class="bg-primary row justify-content-center">
   			<div class="card col-md-4">
   				<div class="card-body">
