@@ -57,7 +57,7 @@
             <a href="#" class="nav-link nav-is-tree nav-edit_document nav-view_document">
               <i class="nav-icon fa fa-folder-open"></i>
               <p>
-              Mata Kuliah A
+              Kewirausahaan
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
