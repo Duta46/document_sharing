@@ -162,6 +162,58 @@ Class Action {
 		}
 	}
 
+	function delete_file_rlac(){
+		extract($_POST);
+		$doc = $this->db->query("SELECT * FROM rlac where id= $id")->fetch_array();
+		$delete = $this->db->query("DELETE FROM rlac where id = ".$id);
+		if($delete){
+			foreach(json_decode($doc['file_json']) as $k => $v){
+				if(is_file('assets/uploads/'.$v))
+				unlink('assets/uploads/'.$v);
+			}
+			return 1;
+		}
+	}
+
+	function delete_file_k3(){
+		extract($_POST);
+		$doc = $this->db->query("SELECT * FROM k3 where id= $id")->fetch_array();
+		$delete = $this->db->query("DELETE FROM k3 where id = ".$id);
+		if($delete){
+			foreach(json_decode($doc['file_json']) as $k => $v){
+				if(is_file('assets/uploads/'.$v))
+				unlink('assets/uploads/'.$v);
+			}
+			return 1;
+		}
+	}
+
+	function delete_file_apdk(){
+		extract($_POST);
+		$doc = $this->db->query("SELECT * FROM apdk where id= $id")->fetch_array();
+		$delete = $this->db->query("DELETE FROM apdk where id = ".$id);
+		if($delete){
+			foreach(json_decode($doc['file_json']) as $k => $v){
+				if(is_file('assets/uploads/'.$v))
+				unlink('assets/uploads/'.$v);
+			}
+			return 1;
+		}
+	}
+
+	function delete_file_disda(){
+		extract($_POST);
+		$doc = $this->db->query("SELECT * FROM disda where id= $id")->fetch_array();
+		$delete = $this->db->query("DELETE FROM disda where id = ".$id);
+		if($delete){
+			foreach(json_decode($doc['file_json']) as $k => $v){
+				if(is_file('assets/uploads/'.$v))
+				unlink('assets/uploads/'.$v);
+			}
+			return 1;
+		}
+	}
+
 	function save_upload(){
 		extract($_POST);
 		// var_dump($_FILES);
@@ -190,6 +242,74 @@ Class Action {
 			$save = $this->db->query("INSERT INTO rldc set $data ");
 		}else{
 			$save = $this->db->query("UPDATE rldc set $data where id = $id");
+		}
+		if($save){
+			return 1;
+		}
+	}
+
+	function save_upload_rlac(){
+		extract($_POST);
+		// var_dump($_FILES);
+		$data = " title ='$title' ";
+		$data .= ", description ='".htmlentities(str_replace("'","&#x2019;",$description))."' ";
+		$data .= ", user_id ='{$_SESSION['login_id']}' ";
+		$data .= ", file_json ='".json_encode($fname)."' ";
+		if(empty($id)){
+			$save = $this->db->query("INSERT INTO rlac set $data ");
+		}else{
+			$save = $this->db->query("UPDATE rlac set $data where id = $id");
+		}
+		if($save){
+			return 1;
+		}
+	}
+
+	function save_upload_k3(){
+		extract($_POST);
+		// var_dump($_FILES);
+		$data = " title ='$title' ";
+		$data .= ", description ='".htmlentities(str_replace("'","&#x2019;",$description))."' ";
+		$data .= ", user_id ='{$_SESSION['login_id']}' ";
+		$data .= ", file_json ='".json_encode($fname)."' ";
+		if(empty($id)){
+			$save = $this->db->query("INSERT INTO k3 set $data ");
+		}else{
+			$save = $this->db->query("UPDATE k3 set $data where id = $id");
+		}
+		if($save){
+			return 1;
+		}
+	}
+
+	function save_upload_apdk(){
+		extract($_POST);
+		// var_dump($_FILES);
+		$data = " title ='$title' ";
+		$data .= ", description ='".htmlentities(str_replace("'","&#x2019;",$description))."' ";
+		$data .= ", user_id ='{$_SESSION['login_id']}' ";
+		$data .= ", file_json ='".json_encode($fname)."' ";
+		if(empty($id)){
+			$save = $this->db->query("INSERT INTO apdk set $data ");
+		}else{
+			$save = $this->db->query("UPDATE apdk set $data where id = $id");
+		}
+		if($save){
+			return 1;
+		}
+	}
+
+	function save_upload_disda(){
+		extract($_POST);
+		// var_dump($_FILES);
+		$data = " title ='$title' ";
+		$data .= ", description ='".htmlentities(str_replace("'","&#x2019;",$description))."' ";
+		$data .= ", user_id ='{$_SESSION['login_id']}' ";
+		$data .= ", file_json ='".json_encode($fname)."' ";
+		if(empty($id)){
+			$save = $this->db->query("INSERT INTO disda set $data ");
+		}else{
+			$save = $this->db->query("UPDATE disda set $data where id = $id");
 		}
 		if($save){
 			return 1;

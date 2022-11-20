@@ -47,6 +47,30 @@ if($action == 'save_upload_rldc'){
 		echo $save;
 }
 
+if($action == 'save_upload_rlac'){
+	$save = $crud->save_upload_rlac();
+	if($save)
+		echo $save;
+}
+
+if($action == 'save_upload_k3'){
+	$save = $crud->save_upload_k3();
+	if($save)
+		echo $save;
+}
+
+if($action == 'save_upload_apdk'){
+	$save = $crud->save_upload_apdk();
+	if($save)
+		echo $save;
+}
+
+if($action == 'save_upload_disda'){
+	$save = $crud->save_upload_disda();
+	if($save)
+		echo $save;
+}
+
 if($action == 'delete_file'){
 	$delete = $crud->delete_file();
 	if($delete)
@@ -55,6 +79,30 @@ if($action == 'delete_file'){
 
 if($action == 'delete_file_rldc'){
 	$delete = $crud->delete_file_rldc();
+	if($delete)
+		echo $delete;
+}
+
+if($action == 'delete_file_rlac'){
+	$delete = $crud->delete_file_rlac();
+	if($delete)
+		echo $delete;
+}
+
+if($action == 'delete_file_k3'){
+	$delete = $crud->delete_file_k3();
+	if($delete)
+		echo $delete;
+}
+
+if($action == 'delete_file_apdk'){
+	$delete = $crud->delete_file_apdk();
+	if($delete)
+		echo $delete;
+}
+
+if($action == 'delete_file_disda'){
+	$delete = $crud->delete_file_disda();
 	if($delete)
 		echo $delete;
 }
