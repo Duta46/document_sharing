@@ -148,6 +148,20 @@ Class Action {
 			return 1;
 		}
 	}
+
+	function delete_file_rldc(){
+		extract($_POST);
+		$doc = $this->db->query("SELECT * FROM rldc where id= $id")->fetch_array();
+		$delete = $this->db->query("DELETE FROM rldc where id = ".$id);
+		if($delete){
+			foreach(json_decode($doc['file_json']) as $k => $v){
+				if(is_file('assets/uploads/'.$v))
+				unlink('assets/uploads/'.$v);
+			}
+			return 1;
+		}
+	}
+
 	function save_upload(){
 		extract($_POST);
 		// var_dump($_FILES);
@@ -164,4 +178,22 @@ Class Action {
 			return 1;
 		}
 	}
+
+	function save_upload_rldc(){
+		extract($_POST);
+		// var_dump($_FILES);
+		$data = " title ='$title' ";
+		$data .= ", description ='".htmlentities(str_replace("'","&#x2019;",$description))."' ";
+		$data .= ", user_id ='{$_SESSION['login_id']}' ";
+		$data .= ", file_json ='".json_encode($fname)."' ";
+		if(empty($id)){
+			$save = $this->db->query("INSERT INTO rldc set $data ");
+		}else{
+			$save = $this->db->query("UPDATE rldc set $data where id = $id");
+		}
+		if($save){
+			return 1;
+		}
+	}
+	
 }

@@ -40,11 +40,25 @@ if($action == 'save_upload'){
 	if($save)
 		echo $save;
 }
+
+if($action == 'save_upload_rldc'){
+	$save = $crud->save_upload_rldc();
+	if($save)
+		echo $save;
+}
+
 if($action == 'delete_file'){
 	$delete = $crud->delete_file();
 	if($delete)
 		echo $delete;
 }
+
+if($action == 'delete_file_rldc'){
+	$delete = $crud->delete_file_rldc();
+	if($delete)
+		echo $delete;
+}
+
 if($action == 'delete_user'){
 	$save = $crud->delete_user();
 	if($save)

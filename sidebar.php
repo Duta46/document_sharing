@@ -54,6 +54,29 @@
             </ul>
           </li>
           <li class="nav-item">
+            <a href="#" class="nav-link nav-is-tree nav-edit_rldc nav-view_rldc">
+              <i class="nav-icon fa fa-folder-open"></i>
+              <p>
+              Rangkaian Listrik DC
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./index.php?page=new_document_rldc" class="nav-link nav-new_document_rldc tree-item">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p>Add New</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./index.php?page=document_list_rldc" class="nav-link nav-document_list_rldc tree-item">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p>List</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
             <a href="#" class="nav-link nav-is-tree nav-edit_document nav-view_document">
               <i class="nav-icon fa fa-folder-open"></i>
               <p>
@@ -108,6 +131,25 @@
   </aside>
   <script>
   	$(document).ready(function(){
+  		var page = '<?php echo isset($_GET['page']) ? $_GET['page'] : 'home' ?>';
+  		if($('.nav-link.nav-'+page).length > 0){
+  			$('.nav-link.nav-'+page).addClass('active')
+          console.log($('.nav-link.nav-'+page).hasClass('tree-item'))
+  			if($('.nav-link.nav-'+page).hasClass('tree-item') == true){
+          $('.nav-link.nav-'+page).closest('.nav-treeview').siblings('a').addClass('active')
+  				$('.nav-link.nav-'+page).closest('.nav-treeview').parent().addClass('menu-open')
+  			}
+        if($('.nav-link.nav-'+page).hasClass('nav-is-tree') == true){
+          $('.nav-link.nav-'+page).parent().addClass('menu-open')
+        }
+
+  		}
+      $('.manage_account').click(function(){
+        uni_modal('Manage Account','manage_user.php?id='+$(this).attr('data-id'))
+      })
+  	})
+
+    $(document).ready(function(){
   		var page = '<?php echo isset($_GET['page']) ? $_GET['page'] : 'home' ?>';
   		if($('.nav-link.nav-'+page).length > 0){
   			$('.nav-link.nav-'+page).addClass('active')
