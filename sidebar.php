@@ -257,155 +257,130 @@
           </li>
           </div>
           <div>
-          <li class="nav-item">
-            <a href="#" class="nav-link nav-is-tree nav-edit_rldc nav-view_rldc d-flex align-items-center">
-              <i class="nav-icon fa fa-folder-open"></i>
-              <p>
-              Rangkaian Listrik DC
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="./index.php?page=new_document_rldc" class="nav-link nav-new_document_rldc tree-item">
-                  <i class="fas fa-angle-right nav-icon"></i>
-                  <p>Add New</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./index.php?page=document_list_rldc" class="nav-link nav-document_list_rldc tree-item">
-                  <i class="fas fa-angle-right nav-icon"></i>
-                  <p>List</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </div>
-        <div>
-          <li class="nav-item">
-            <a href="#" class="nav-link nav-is-tree nav-edit_rlac nav-view_rlac d-flex align-items-center">
-              <i class="nav-icon fa fa-folder-open"></i>
-              <p class="text-wrap">
-              Rangkaian Listrik AC
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="./index.php?page=new_document_rlac" class="nav-link nav-new_document_rlac tree-item">
-                  <i class="fas fa-angle-right nav-icon"></i>
-                  <p>Add New</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./index.php?page=document_list_rlac" class="nav-link nav-document_list_rlac tree-item">
-                  <i class="fas fa-angle-right nav-icon"></i>
-                  <p>List</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </div>
-        <div>
-          <li class="nav-item">
-            <a href="#" class="nav-link nav-is-tree nav-edit_document nav-view_document d-flex align-items-center">
-              <i class="nav-icon fa fa-folder-open"></i>
-              <p class="text-wrap">
-              Kewirausahaan
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="./index.php?page=new_document" class="nav-link nav-new_document tree-item">
-                  <i class="fas fa-angle-right nav-icon"></i>
-                  <p>Add New</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./index.php?page=document_list" class="nav-link nav-document_list tree-item">
-                  <i class="fas fa-angle-right nav-icon"></i>
-                  <p>List</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </div>
-        <div>
-          <li class="nav-item">
-            <a href="#" class="nav-link nav-is-tree nav-edit_document_k3 nav-view_document_k3 d-flex align-items-center">
-              <i class="nav-icon fa fa-folder-open"></i>
-              <p class="text-wrap">
-              Keselamatan dan Kesehatan Kerja
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="./index.php?page=new_document_k3" class="nav-link nav-new_document_k3 tree-item">
-                  <i class="fas fa-angle-right nav-icon"></i>
-                  <p>Add New</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./index.php?page=document_list_k3" class="nav-link nav-document_list_k3 tree-item">
-                  <i class="fas fa-angle-right nav-icon"></i>
-                  <p>List</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </div>
-        <div>
-          <li class="nav-item">
-            <a href="#" class="nav-link nav-is-tree nav-edit_document_apdk nav-view_document_apdk d-flex align-items-center">
-              <i class="nav-icon fa fa-folder-open"></i>
-              <p class="text-wrap">
-              Arsitektur dan Pemrograman Dasar Komputer
-                <i class="right fas fa-angle-left d-flex align-items-center justify-content-center"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="./index.php?page=new_document_apdk" class="nav-link nav-new_document_apdk tree-item">
-                  <i class="fas fa-angle-right nav-icon"></i>
-                  <p>Add New</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./index.php?page=document_list_apdk" class="nav-link nav-document_list_apdk tree-item">
-                  <i class="fas fa-angle-right nav-icon"></i>
-                  <p>List</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </div>
-        <div>
-          <li class="nav-item">
-            <a href="#" class="nav-link nav-is-tree nav-edit_document_disda nav-view_document_disda d-flex align-items-center">
-              <i class="nav-icon fa fa-folder-open"></i>
-              <p>
-              Distribusi Daya
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="./index.php?page=new_document_disda" class="nav-link nav-new_document_disda tree-item">
-                  <i class="fas fa-angle-right nav-icon"></i>
-                  <p>Add New</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./index.php?page=document_list_disda" class="nav-link nav-document_list_disda tree-item">
-                  <i class="fas fa-angle-right nav-icon"></i>
-                  <p>List</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </div>
+            <li class="nav-item">
+              <a href="#" class="nav-link nav-is-tree nav-edit_rlac nav-view_rlac d-flex align-items-center">
+                <i class="nav-icon fa fa-folder-open"></i>
+                <p class="text-wrap">
+                Rangkaian Listrik AC
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="./index.php?page=new_document_rlac" class="nav-link nav-new_document_rlac tree-item">
+                    <i class="fas fa-angle-right nav-icon"></i>
+                    <p>Add New</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./index.php?page=document_list_rlac" class="nav-link nav-document_list_rlac tree-item">
+                    <i class="fas fa-angle-right nav-icon"></i>
+                    <p>List</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </div>
+          <div>
+            <li class="nav-item">
+              <a href="#" class="nav-link nav-is-tree nav-edit_document nav-view_document d-flex align-items-center">
+                <i class="nav-icon fa fa-folder-open"></i>
+                <p class="text-wrap">
+                Kewirausahaan
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="./index.php?page=new_document" class="nav-link nav-new_document tree-item">
+                    <i class="fas fa-angle-right nav-icon"></i>
+                    <p>Add New</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./index.php?page=document_list" class="nav-link nav-document_list tree-item">
+                    <i class="fas fa-angle-right nav-icon"></i>
+                    <p>List</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </div>
+          <div>
+            <li class="nav-item">
+              <a href="#" class="nav-link nav-is-tree nav-edit_document_k3 nav-view_document_k3 d-flex align-items-center">
+                <i class="nav-icon fa fa-folder-open"></i>
+                <p class="text-wrap">
+                Keselamatan dan Kesehatan Kerja
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="./index.php?page=new_document_k3" class="nav-link nav-new_document_k3 tree-item">
+                    <i class="fas fa-angle-right nav-icon"></i>
+                    <p>Add New</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./index.php?page=document_list_k3" class="nav-link nav-document_list_k3 tree-item">
+                    <i class="fas fa-angle-right nav-icon"></i>
+                    <p>List</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </div>
+          <div>
+            <li class="nav-item">
+              <a href="#" class="nav-link nav-is-tree nav-edit_document_apdk nav-view_document_apdk d-flex align-items-center">
+                <i class="nav-icon fa fa-folder-open"></i>
+                <p class="text-wrap">
+                Arsitektur dan Pemrograman Dasar Komputer
+                  <i class="right fas fa-angle-left d-flex align-items-center justify-content-center"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="./index.php?page=new_document_apdk" class="nav-link nav-new_document_apdk tree-item">
+                    <i class="fas fa-angle-right nav-icon"></i>
+                    <p>Add New</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./index.php?page=document_list_apdk" class="nav-link nav-document_list_apdk tree-item">
+                    <i class="fas fa-angle-right nav-icon"></i>
+                    <p>List</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </div>
+          <div>
+            <li class="nav-item">
+              <a href="#" class="nav-link nav-is-tree nav-edit_document_disda nav-view_document_disda d-flex align-items-center">
+                <i class="nav-icon fa fa-folder-open"></i>
+                <p>
+                Distribusi Daya
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="./index.php?page=new_document_disda" class="nav-link nav-new_document_disda tree-item">
+                    <i class="fas fa-angle-right nav-icon"></i>
+                    <p>Add New</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./index.php?page=document_list_disda" class="nav-link nav-document_list_disda tree-item">
+                    <i class="fas fa-angle-right nav-icon"></i>
+                    <p>List</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </div>
         <?php endif; ?>
         </ul>
       </nav>
