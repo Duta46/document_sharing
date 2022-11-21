@@ -66,7 +66,7 @@
               <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-folder"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Keselamatan dan Kesehatan Kerja</span>
+                <span class="info-box-text text-wrap">Keselamatan dan Kesehatan Kerja</span>
                 <span class="info-box-number">
                   <?php echo $conn->query("SELECT * FROM k3  where user_id = {$_SESSION['login_id']}")->num_rows; ?>
                 </span>
@@ -80,7 +80,7 @@
               <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-folder"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Arsitektur dan Pemrograman Dasar Komputer</span>
+                <span class="info-box-text text-wrap">Arsitektur dan Pemrograman Dasar Komputer</span>
                 <span class="info-box-number">
                   <?php echo $conn->query("SELECT * FROM apdk  where user_id = {$_SESSION['login_id']}")->num_rows; ?>
                 </span>
@@ -120,21 +120,6 @@
       </div>
   </div>
   <div class="row">
-    <div class="col-12 col-sm-6 col-md-3">
-      <div class="info-box">
-      <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-folder"></i></span>
-
-      <div class="info-box-content">
-        <span class="info-box-text">Total Documents</span>
-        <span class="info-box-number">
-          <?php echo $conn->query("SELECT * FROM documents  where user_id = {$_SESSION['login_id']}")->num_rows; ?>
-        </span>
-        </div>
-         <!-- /.info-box-content -->
-      </div>
-      <!-- /.info-box -->
-    </div>
-    <!-- /.col -->
     <!-- /.col -->
     <div class="col-12 col-sm-6 col-md-3">
       <div class="info-box">
@@ -200,7 +185,7 @@
               <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-folder"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Arsitektur dan Pemrograman Dasar Komputer</span>
+                <span class="info-box-text text-wrap">Arsitektur dan Pemrograman Dasar Komputer</span>
                 <span class="info-box-number">
                   <?php echo $conn->query("SELECT * FROM apdk  where user_id = {$_SESSION['login_id']}")->num_rows; ?>
                 </span>
