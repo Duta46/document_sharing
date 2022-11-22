@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 20, 2022 at 02:12 PM
+-- Generation Time: Nov 21, 2022 at 04:39 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -182,9 +182,9 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `firstname`, `lastname`, `middlename`, `contact`, `address`, `email`, `password`, `type`, `avatar`, `date_created`) VALUES
 (1, 'Admin', 'Admin', '', '+12354654787', 'Sample', 'admin@admin.com', '0192023a7bbd73250516f069df18b500', 1, '', '2020-11-11 15:35:19'),
-(2, 'John', 'Smith', 'C', '+14526-5455-44', 'Address', 'jsmith@sample.com', '1254737c076cf867dc53d60a0364f38e', 2, '1605080820_avatar.jpg', '2020-11-11 09:24:40'),
 (3, 'Cliff', 'Satryo', 'Gallant', 'dwjdwj', 'Pesona Cilebut 02 Blok FB 02 No.16 RT.11 RW.15', 'sayagelen@gmail.com', 'f5bb0c8de146c67b44babbf4e6584cc0', 2, '1668493800_1605057840_avatar.jpg', '2022-11-15 13:30:34'),
-(4, 'Duta', 'Gunawan', 'Alif', '123', 'Surabaya', 'gelenjap@gmail.com', 'f5bb0c8de146c67b44babbf4e6584cc0', 1, '1668495960_1605057840_avatar.jpg', '2022-11-15 14:06:58');
+(4, 'Duta', 'Gunawan', 'Alif', '123', 'Surabaya', 'gelenjap@gmail.com', 'f5bb0c8de146c67b44babbf4e6584cc0', 1, '1668495960_1605057840_avatar.jpg', '2022-11-15 14:06:58'),
+(5, 'user', 'user', '', '2837293792', 'Jln hayam wuruk dodik g46', 'user@user.com', '6ad14ba9986e3615423dfca256d04e3f', 2, '', '2022-11-21 10:23:15');
 
 --
 -- Indexes for dumped tables
@@ -276,7 +276,7 @@ ALTER TABLE `rldc`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
