@@ -112,6 +112,7 @@ Class Action {
 			$_SESSION['login_avatar'] = $fname;
 			return 1;
 		}
+
 	}
 	function delete_user(){
 		extract($_POST);
@@ -315,5 +316,4 @@ Class Action {
 			return 1;
 		}
 	}
-	
 }
