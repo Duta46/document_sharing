@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 21, 2022 at 04:39 AM
+-- Generation Time: Nov 22, 2022 at 02:34 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -29,20 +29,12 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `apdk` (
   `id` int(11) NOT NULL,
-  `title` varchar(255) NOT NULL,
+  `title` varchar(200) NOT NULL,
   `description` text NOT NULL,
   `file_json` text NOT NULL,
   `user_id` int(30) NOT NULL,
   `date_created` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `apdk`
---
-
-INSERT INTO `apdk` (`id`, `title`, `description`, `file_json`, `user_id`, `date_created`) VALUES
-(1, 'Tse APDK', '																																Bahasa C# adalah salah satu baha yang digunakan didalam pemrograman menggunakan Unity																												', '[\"1668940740_Tes.pdf\"]', 1, '2022-11-20 17:34:31'),
-(2, 'Tes Lagi APDK', 'APDK adalah blablabla', '[\"1668948000_Tes.pdf\"]', 1, '2022-11-20 19:40:02');
 
 -- --------------------------------------------------------
 
@@ -52,19 +44,12 @@ INSERT INTO `apdk` (`id`, `title`, `description`, `file_json`, `user_id`, `date_
 
 CREATE TABLE `disda` (
   `id` int(11) NOT NULL,
-  `title` varchar(255) NOT NULL,
+  `title` varchar(200) NOT NULL,
   `description` text NOT NULL,
   `file_json` text NOT NULL,
-  `user_id` int(11) NOT NULL,
+  `user_id` int(30) NOT NULL,
   `date_created` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `disda`
---
-
-INSERT INTO `disda` (`id`, `title`, `description`, `file_json`, `user_id`, `date_created`) VALUES
-(1, 'Tes Distribusi Daya', 'Distribusi Daya daalaah blablabla', '[\"1668940740_Tes.pdf\"]', 1, '2022-11-20 17:39:41');
 
 -- --------------------------------------------------------
 
@@ -86,9 +71,9 @@ CREATE TABLE `documents` (
 --
 
 INSERT INTO `documents` (`id`, `title`, `description`, `file_json`, `user_id`, `date_created`) VALUES
-(9, 'tes KWU', '								KWU							', '[\"1668940020_Tes.pdf\"]', 1, '2022-11-20 10:20:28'),
-(11, 'asd', 'asd', '[\"1668915420_Kelompok 12_Soal Pemrograman Web.pdf\"]', 1, '2022-11-20 10:37:18'),
-(15, 'Tes Tambah Dokumen (Gelen)', 'Tes 123', '[\"1668941040_Tes.pdf\"]', 3, '2022-11-20 17:44:23');
+(1, 'Sample documents', '								&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; font-size: 14px; text-align: justify;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt orci eu erat dignissim, id commodo enim mattis. Cras egestas interdum ipsum. Fusce pretium porttitor tellus quis malesuada. Nullam et ex ullamcorper, accumsan nunc sed, tempor erat. Phasellus non nisi sagittis massa laoreet convallis eu id mauris. Cras malesuada sodales lectus non vehicula. Nulla lacinia fringilla felis convallis tempus. Cras volutpat lorem vitae congue rutrum. Sed scelerisque tempus fermentum.&lt;/span&gt;																						', '[\"1605074220_sample (4).pdf\",\"1605074220_sample (3).pdf\"]', 1, '2020-11-11 13:47:40'),
+(2, 'Sample documents', '&lt;h2&gt;&lt;b&gt;Sample Header&amp;nbsp;&lt;/b&gt;&lt;/h2&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; font-size: 14px; text-align: justify;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt orci eu erat dignissim, id commodo enim mattis. Cras egestas interdum ipsum. Fusce pretium porttitor tellus quis malesuada. Nullam et ex ullamcorper, accumsan nunc sed, tempor erat. Phasellus non nisi sagittis massa laoreet convallis eu id mauris. Cras malesuada sodales lectus non vehicula. Nulla lacinia fringilla felis convallis tempus. Cras volutpat lorem vitae congue rutrum. Sed scelerisque tempus fermentum.&lt;/span&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; font-size: 14px; text-align: justify;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt orci eu erat dignissim, id commodo enim mattis. Cras egestas interdum ipsum. Fusce pretium porttitor tellus quis malesuada. Nullam et ex ullamcorper, accumsan nunc sed, tempor erat. Phasellus non nisi sagittis massa laoreet convallis eu id mauris. Cras malesuada sodales lectus non vehicula. Nulla lacinia fringilla felis convallis tempus. Cras volutpat lorem vitae congue rutrum. Sed scelerisque tempus fermentum.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; font-size: 14px; text-align: justify;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt orci eu erat dignissim, id commodo enim mattis. Cras egestas interdum ipsum. Fusce pretium porttitor tellus quis malesuada. Nullam et ex ullamcorper, accumsan nunc sed, tempor erat. Phasellus non nisi sagittis massa laoreet convallis eu id mauris. Cras malesuada sodales lectus non vehicula. Nulla lacinia fringilla felis convallis tempus. Cras volutpat lorem vitae congue rutrum. Sed scelerisque tempus fermentum.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; font-size: 14px; text-align: justify;&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt orci eu erat dignissim, id commodo enim mattis. Cras egestas interdum ipsum. Fusce pretium porttitor tellus quis malesuada. Nullam et ex ullamcorper, accumsan nunc sed, tempor erat. Phasellus non nisi sagittis massa laoreet convallis eu id mauris. Cras malesuada sodales lectus non vehicula. Nulla lacinia fringilla felis convallis tempus. Cras volutpat lorem vitae congue rutrum. Sed scelerisque tempus fermentum.&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;															', '[\"1605080340_Sample_Doc.doc\",\"1605080340_sample_pdf_file.pdf\"]', 2, '2020-11-11 15:39:50'),
+(3, 'Tes KWU', 'Kewirausahaan adalah blablabla', '[\"1669080720_Tes.pdf\"]', 3, '2022-11-22 08:32:54');
 
 -- --------------------------------------------------------
 
@@ -98,19 +83,12 @@ INSERT INTO `documents` (`id`, `title`, `description`, `file_json`, `user_id`, `
 
 CREATE TABLE `k3` (
   `id` int(11) NOT NULL,
-  `title` varchar(255) NOT NULL,
+  `title` varchar(200) NOT NULL,
   `description` text NOT NULL,
   `file_json` text NOT NULL,
   `user_id` int(30) NOT NULL,
-  `date_created` datetime NOT NULL DEFAULT current_timestamp()
+  `date_created` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `k3`
---
-
-INSERT INTO `k3` (`id`, `title`, `description`, `file_json`, `user_id`, `date_created`) VALUES
-(1, 'Tes K3', '								K3 sangat penting dalam pekerjaan							', '[\"1668940380_Tes.pdf\"]', 1, '2022-11-20 17:33:57');
 
 -- --------------------------------------------------------
 
@@ -120,19 +98,12 @@ INSERT INTO `k3` (`id`, `title`, `description`, `file_json`, `user_id`, `date_cr
 
 CREATE TABLE `rlac` (
   `id` int(11) NOT NULL,
-  `title` varchar(255) NOT NULL,
+  `title` varchar(200) NOT NULL,
   `description` text NOT NULL,
   `file_json` text NOT NULL,
   `user_id` int(30) NOT NULL,
   `date_created` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `rlac`
---
-
-INSERT INTO `rlac` (`id`, `title`, `description`, `file_json`, `user_id`, `date_created`) VALUES
-(1, 'Tes AC', '								Rangkaian AC berbed dengan rangkaian DC							', '[\"1668940680_Tes.pdf\"]', 1, '2022-11-20 17:25:54');
 
 -- --------------------------------------------------------
 
@@ -142,19 +113,12 @@ INSERT INTO `rlac` (`id`, `title`, `description`, `file_json`, `user_id`, `date_
 
 CREATE TABLE `rldc` (
   `id` int(11) NOT NULL,
-  `title` varchar(255) NOT NULL,
+  `title` varchar(200) NOT NULL,
   `description` text NOT NULL,
   `file_json` text NOT NULL,
   `user_id` int(30) NOT NULL,
   `date_created` datetime NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Rangkaian Listrik DC';
-
---
--- Dumping data for table `rldc`
---
-
-INSERT INTO `rldc` (`id`, `title`, `description`, `file_json`, `user_id`, `date_created`) VALUES
-(9, 'Tes AC', '								Rangkaian AC berbeda dengan Rangkaian DC							', '[\"1668939900_Tes.pdf\"]', 1, '2022-11-20 17:25:10');
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -182,9 +146,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `firstname`, `lastname`, `middlename`, `contact`, `address`, `email`, `password`, `type`, `avatar`, `date_created`) VALUES
 (1, 'Admin', 'Admin', '', '+12354654787', 'Sample', 'admin@admin.com', '0192023a7bbd73250516f069df18b500', 1, '', '2020-11-11 15:35:19'),
-(3, 'Cliff', 'Satryo', 'Gallant', 'dwjdwj', 'Pesona Cilebut 02 Blok FB 02 No.16 RT.11 RW.15', 'sayagelen@gmail.com', 'f5bb0c8de146c67b44babbf4e6584cc0', 2, '1668493800_1605057840_avatar.jpg', '2022-11-15 13:30:34'),
-(4, 'Duta', 'Gunawan', 'Alif', '123', 'Surabaya', 'gelenjap@gmail.com', 'f5bb0c8de146c67b44babbf4e6584cc0', 1, '1668495960_1605057840_avatar.jpg', '2022-11-15 14:06:58'),
-(5, 'user', 'user', '', '2837293792', 'Jln hayam wuruk dodik g46', 'user@user.com', '6ad14ba9986e3615423dfca256d04e3f', 2, '', '2022-11-21 10:23:15');
+(2, 'John', 'Smith', 'C', '+14526-5455-44', 'Address', 'jsmith@sample.com', '1254737c076cf867dc53d60a0364f38e', 2, '1605080820_avatar.jpg', '2020-11-11 09:24:40'),
+(3, 'Cliff Gallant', 'Satryo', '', '083807677690', 'Pesona Cilebut 02 Blok FB 02 No.16 RT.11 RW.15', 'sayagelen@gmail.com', 'f5bb0c8de146c67b44babbf4e6584cc0', 2, '', '2022-11-22 08:31:12');
 
 --
 -- Indexes for dumped tables
@@ -240,43 +203,43 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `apdk`
 --
 ALTER TABLE `apdk`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `disda`
 --
 ALTER TABLE `disda`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `documents`
 --
 ALTER TABLE `documents`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `k3`
 --
 ALTER TABLE `k3`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `rlac`
 --
 ALTER TABLE `rlac`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `rldc`
 --
 ALTER TABLE `rldc`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
