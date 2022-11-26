@@ -93,6 +93,6 @@ foreach($qry as $k => $v){
 		end_load()
 	}
 	$('#share').click(function(){
-		uni_modal("<i class='fa fa-share'></i> Share this document using the link.","modal_share_link.php?did=<?php echo md5($id) ?>")
+		uni_modal("<i class='fa fa-share'></i> Share this document using the link.","modal_share_link_disda.php?did=<?php echo md5($id) ?>")
 	})
 </script>
