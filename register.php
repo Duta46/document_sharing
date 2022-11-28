@@ -33,24 +33,39 @@
     <div id="login-center" class="bg-primary row justify-content-center">
       <div class="card col-md-4">
         <div class="card-body">
-          <form id="login-form" >
+          <form action="proses_register.php" method="POST" >
+
           <div class="form-group">
-              <label for="first-name" class="control-label text-dark">First-name</label>
-              <input type="text" id="email" name="email" class="form-control form-control-sm">
+              <label for="" class="control-label text-dark">First-name</label>
+              <input type="text" id="firstname" required name="firstname" class="form-control form-control-sm">
             </div>
+
             <div class="form-group">
-              <label for="last-name" class="control-label text-dark">Last-name</label>
-              <input type="text" id="email" name="email" class="form-control form-control-sm">
+              <label for="" class="control-label text-dark">Last-name</label>
+              <input type="text" id="lastname" required name="lastname" class="form-control form-control-sm">
             </div>
+
             <div class="form-group">
-              <label for="email" class="control-label text-dark">Email</label>
-              <input type="text" id="email" name="email" class="form-control form-control-sm">
+              <label for="" class="control-label text-dark">Contact</label>
+              <input type="text" id="contact" required name="contact" class="form-control form-control-sm">
             </div>
+
             <div class="form-group">
-              <label for="password" class="control-label text-dark">Password</label>
-              <input type="password" id="password" name="password" class="form-control form-control-sm">
+              <label for="" class="control-label text-dark">Email</label>
+              <input type="text" id="email" required name="email" class="form-control form-control-sm">
             </div>
-            <center><button class="btn-sm btn-block btn-wave col-md-4 btn-primary">Register</button></center>
+
+            <div class="form-group">
+              <label for="" class="control-label text-dark">Password</label>
+              <input type="password" id="password" required name="password" class="form-control form-control-sm">
+            </div>
+
+            <div class="form-group">
+              <label for="" class="control-label text-dark">Confirm Password</label>
+              <input type="confirm_password" required id="confirm_password" name="confirm_password" class="form-control form-control-sm">
+            </div>
+
+            <center><button class="btn-sm btn-block btn-wave col-md-4 btn-primary" name="register-btn">Register</button></center>
           <center><p class="text-dark">Sudah punya akun ? <a href="login.php">Login</a></p></center>
           </form>
         </div>
@@ -59,6 +74,7 @@
     </div>
 </main>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
