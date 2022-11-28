@@ -2,12 +2,12 @@
 include('./db_connect.php');
 
 if(isset($_POST['register-btn'])){
-     $firstname = $_POST['firstname'];
+    $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
     $contact = $_POST['contact'];
     $email = $_POST['email'];
-    $password = $_POST['password'];
-    $confirm_password = $_POST['confirm_password'];
+    $password = md5($_POST['password']);
+    $confirm_password = md5($_POST['confirm_password']);
 
     if($password == $confirm_password)
     {

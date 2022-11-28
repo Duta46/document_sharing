@@ -62,7 +62,7 @@
 
             <div class="form-group">
               <label for="" class="control-label text-dark">Confirm Password</label>
-              <input type="confirm_password" required id="confirm_password" name="confirm_password" class="form-control form-control-sm">
+              <input type="password" required id="confirm_password" name="confirm_password" class="form-control form-control-sm">
             </div>
 
             <center><button class="btn-sm btn-block btn-wave col-md-4 btn-primary" name="register-btn">Register</button></center>

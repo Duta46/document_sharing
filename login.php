@@ -51,7 +51,7 @@ header("location:index.php?page=home");
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p class="text-dark">Silahkan Hubungi admin</p>
+        <p class="text-dark">Silahkan Hubungi Admin</p>
       </div>
     </div>
   </div>
