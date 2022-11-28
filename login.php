@@ -33,8 +33,8 @@ header("location:index.php?page=home");
 		height: calc(100%);
 		display: flex;
 	}
-	p{
-		margin-top: 10px;
+	center p{
+		margin-top: 20px;
 	}
 </style>
 
