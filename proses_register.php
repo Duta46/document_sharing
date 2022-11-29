@@ -16,11 +16,13 @@ if(isset($_POST['register-btn'])){
 
         if($query_run)
         {
-            echo "Registrasi Berhasil";
+            header('Location: /document_sharing/login.php');
+            $message = "Registrasi berhasil";
+            echo "<script type='text/javascript'>alert('$message');</script>";
         }
         else 
         {
-            echo "Registrasi Gagal";
+            header('Location: /document_sharing/register.php');
         }
     }
     else
