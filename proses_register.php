@@ -27,7 +27,9 @@ if(isset($_POST['register-btn'])){
     }
     else
     {
-        echo "password not matched";
+        header('Location: /document_sharing/register.php');
+        $message = "Password tidak sama";
+        echo "<script type='text/javascript'>alert('$message');</script>";
     }
 }
 ?>
